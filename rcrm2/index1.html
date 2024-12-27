@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit CRM Sourcing Extension</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Recruit CRM</div>
+        <h1>Sourcing Extension</h1>
+        <button class="settings-btn">⚙️</button>
+    </header>
+    <main>
+        <section class="candidate-list">
+            <h2>Detected Candidates</h2>
+            <div class="bulk-actions">
+                <button class="bulk-select">Select All</button>
+                <button class="bulk-deselect">Deselect All</button>
+            </div>
+            <ul id="candidate-items">
+                <!-- Dynamically added candidate items -->
+                <li class="candidate-item">
+                    <input type="checkbox" id="candidate1" checked>
+                    <label for="candidate1">
+                        <span class="candidate-name">John Doe</span>
+                        <span class="candidate-title">Software Engineer at ABC Corp</span>
+                    </label>
+                </li>
+                <li class="candidate-item">
+                    <input type="checkbox" id="candidate2">
+                    <label for="candidate2">
+                        <span class="candidate-name">Jane Smith</span>
+                        <span class="candidate-title">Product Manager at XYZ Ltd</span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <section class="candidate-details">
+            <h2>Candidate Details</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="John Doe">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" value="Software Engineer">
+                <label for="company">Company:</label>
+                <input type="text" id="company" value="ABC Corp">
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" placeholder="e.g., JavaScript, Remote">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <button class="clear-btn">Clear All</button>
+        <button class="save-btn">Save Candidates</button>
+    </footer>
+</body>
+</html>

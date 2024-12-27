@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d89ef;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header .settings-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.candidate-list, .candidate-details {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.candidate-list h2, .candidate-details h2 {
+    margin-top: 0;
+}
+
+.candidate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.candidate-item label {
+    margin-left: 10px;
+}
+
+.bulk-actions {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #2d89ef;
+    color: #fff;
+}
+
+.clear-btn {
+    background-color: #ccc;
+    color: #333;
+}
